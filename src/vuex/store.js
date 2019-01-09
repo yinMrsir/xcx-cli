@@ -11,7 +11,6 @@ const store = new Vuex.Store({
   },
   mutations: {
     saveUserInfo: (state, data) => {
-      console.log(data)
       const obj = state
       obj.userInfo = data
     }

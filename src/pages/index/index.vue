@@ -2,7 +2,7 @@
   <div class="container">
     <button open-type="getUserInfo" @getuserinfo="getuserinfo">登录</button>
     <button @tap="getWeRunData">{{step ? '今日运动步数:'+step : '获取微信步数'}}</button>
-    <div v-for="item in 5">
+    <div v-for="(item, index) in 5" wx:key>
       <Dynamic></Dynamic>
     </div>
   </div>
@@ -29,7 +29,14 @@ export default {
   },
   methods: {
     async getuserinfo (e) {
-      await GlobalApi.login(e.mp.detail)
+      let data = await GlobalApi.login(e.mp.detail)
+      if (data) {
+        wx.showToast({
+          title: '登录成功',
+          icon: 'success',
+          duration: 2000
+        })
+      }
     },
     async getWeRunData () {
       let data = await GlobalApi.getWeRunData()

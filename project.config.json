@@ -11,7 +11,7 @@
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
 	"appid": "wx3c2699af4b7fba2f",
-	"projectname": "mpvue-demo",
+	"projectname": "xcx-cli",
 	"condition": {
 		"search": {
 			"current": -1,

@@ -24,12 +24,6 @@
         <img class="" src="http://111.230.52.50/upload/null/20190107161955412.JPEG" />
       </div>
     </div>
-    <div class='opt'>
-      <div class="counts"><img src="../resource/images/icon_read@3x.png">0</div>
-      <div class="counts"><img src="../resource/images/icon_like@3x.png">0</div>
-      <div class="counts"><img src="../resource/images/icon_message_sm@3x.png">0</div>
-      <div class="counts"><img src="../resource/images/icon_share_sm@3x.png">0</div>
-    </div>
   </div>
 </template>
 

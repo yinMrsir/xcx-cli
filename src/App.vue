@@ -10,6 +10,4 @@
 </script>
 
 <style lang="less">
-@import './style/common.css';
-@import './style/weui.css';
 </style>
