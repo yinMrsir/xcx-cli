@@ -1,4 +1,4 @@
-# mpvue-demo
+# xcx-cli
 
 > A Mpvue project
 
