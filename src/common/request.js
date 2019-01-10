@@ -11,7 +11,7 @@ const Request = (url, method = 'GET', params) => {
       data: params,
       success (data) {
         if (data.statusCode === 200 && data.data.code === 200) {
-          resolve(data.data)
+          resolve(data.data.Result)
         } else if (data.statusCode === 200 && data.data.code === 551) {
           wx.showToast({
             title: data.data.errMessage,
