@@ -18,4 +18,9 @@ npm run build
 npm run build --report
 ```
 
+#### 当前实现的功能
+- [√] 登录
+- [√] 获取微信步数
+- [√] 聊天室(静态DEMO)：发送文字、发送图片、发送视频、视频预览
+
 ### 后端接口开发移步至(https://github.com/yinMrsir/weixin)
