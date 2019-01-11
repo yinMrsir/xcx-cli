@@ -13,13 +13,13 @@ const Request = (url, method = 'GET', params) => {
         if (data.statusCode === 200 && data.data.code === 200) {
           resolve(data.data.Result)
         } else if (data.statusCode === 200 && data.data.code === 551) {
+          resolve(data.data.Result)
+        } else {
           wx.showToast({
             title: data.data.errMessage,
             icon: 'none',
             duration: 2000
           })
-          resolve(false)
-        } else {
           resolve(false)
         }
       },

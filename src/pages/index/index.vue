@@ -1,11 +1,8 @@
-<template>
-  <div class="container">
-    <button open-type="getUserInfo" @getuserinfo="getuserinfo">登录</button>
-    <button @tap="getWeRunData">{{step ? '今日运动步数:'+step : '获取微信步数'}}</button>
-    <div v-for="(item, index) in 5" wx:key>
-      <Dynamic></Dynamic>
-    </div>
-  </div>
+<template lang="pug">
+  .container
+    button(open-type="getUserInfo" @getuserinfo="getuserinfo") 登录
+    button(@tap="getWeRunData") {{step ? '今日运动步数:'+step : '获取微信步数'}}
+    navigator.box(url="/pages/chat/main") 聊天室DEMO
 </template>
 
 <script>
@@ -33,7 +30,7 @@ export default {
       if (data) {
         wx.showToast({
           title: '登录成功',
-          icon: 'success',
+          icon: 'none',
           duration: 2000
         })
       }
@@ -49,6 +46,13 @@ export default {
   }
 }
 </script>
+
+<style>
+  .box{
+    padding: 20rpx;
+    text-align: center;
+  }
+</style>
 
 
 

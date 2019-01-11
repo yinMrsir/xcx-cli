@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/my/main"
+    "pages/map/main",
+    "pages/chat/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,8 +17,8 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/my/main",
-        "text": "我的"
+        "pagePath": "pages/map/main",
+        "text": "地图"
       }
     ]
   }

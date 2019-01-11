@@ -10,4 +10,7 @@
 </script>
 
 <style lang="less">
+  page{
+    background: #f1f1f1;
+  }
 </style>

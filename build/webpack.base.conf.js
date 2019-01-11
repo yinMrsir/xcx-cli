@@ -55,6 +55,10 @@ let baseWebpackConfig = {
   module: {
     rules: [
       {
+        test: /\.pug$/,
+        loader: 'pug'
+      },
+      {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',

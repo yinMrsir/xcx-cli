@@ -33,9 +33,16 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "我的",
-					"pathName": "pages/my/main"
+					"pathName": "pages/map/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "聊天",
+					"pathName": "pages/chat/main",
+					"query": ""
 				}
 			]
 		}
