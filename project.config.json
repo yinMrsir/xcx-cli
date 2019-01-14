@@ -35,13 +35,19 @@
 				{
 					"id": 0,
 					"name": "我的",
-					"pathName": "pages/map/main",
+					"pathName": "pages/my/main",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "聊天",
 					"pathName": "pages/chat/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布信息",
+					"pathName": "pages/add/main",
 					"query": ""
 				}
 			]

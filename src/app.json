@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/map/main",
-    "pages/chat/main"
+    "pages/my/main",
+    "pages/chat/main",
+    "pages/add/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,11 +15,15 @@
     "list": [
       {
         "pagePath": "pages/index/main",
-        "text": "首页"
+        "text": "找资源"
       },
       {
-        "pagePath": "pages/map/main",
-        "text": "地图"
+        "pagePath": "pages/my/main",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/add/main",
+        "text": "我有资源"
       }
     ]
   }

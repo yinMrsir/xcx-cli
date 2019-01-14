@@ -10,6 +10,8 @@
 </script>
 
 <style lang="less">
+  @import "style/icon.css";
+  @import "style/colorUi.css";
   page{
     background: #f1f1f1;
   }

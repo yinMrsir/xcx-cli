@@ -5,6 +5,7 @@ import store from '../../vuex/store'
  * 微信登录
  * @param jsonData
  * @returns {Promise<*>}
+ * let data = await GlobalApi.login(e.mp.detail)
  */
 const login = async (jsonData) => {
   let code = await wxlogin()
@@ -19,6 +20,7 @@ const login = async (jsonData) => {
 /**
  * 获取微信步数
  * @returns {Promise<*>}
+ * let data = await GlobalApi.getWeRunData()
  */
 const getWeRunData = async () => {
   let {encryptedData, iv} = await wxGetWeRunData()
