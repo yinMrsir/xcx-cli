@@ -22,13 +22,13 @@
     </div>
     <div class="cu-form-group top">
       <div class='title'>其他：</div>
-      <textarea placeholder="您可在此输入其他平台粉丝量..." maxlength="-1" placeholder-class='placeholder'></textarea>
+      <textarea placeholder="您可在此输入其他平台粉丝量，或者其他信息..." maxlength="-1" placeholder-class='placeholder'></textarea>
     </div>
-    <view class="cu-bar margin-top ">
-      <view class='action'>
+    <div class="cu-bar margin-top ">
+      <div class='action'>
         <text class='icon-title text-red'></text>上传图片更有说服力哦~
-      </view>
-    </view>
+      </div>
+    </div>
     <div class="cu-form-group margin-top">
       <div class="grid col-3 grid-square flex-sub">
         <div class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);">
@@ -43,9 +43,9 @@
         </div>
       </div>
     </div>
-    <view class="padding flex flex-direction">
+    <div class="padding flex flex-direction">
       <button class='cu-btn bg-red margin-tb-sm lg'>发布信息</button>
-    </view>
+    </div>
   </div>
 </template>
 

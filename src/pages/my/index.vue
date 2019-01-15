@@ -10,16 +10,16 @@
     </div>
     <div class="cu-list menu margin-top">
       <div class="cu-item">
-        <div class='content'>
+        <navigator class='content' hover-class='none' url='/pages/resource-add/main'>
           <text class='icon-circlefill text-grey'></text>
           <text class='text-grey'>我有资源</text>
-        </div>
+        </navigator>
       </div>
       <div class="cu-item">
-        <button class='cu-btn content' open-type='contact'>
+        <navigator class=' content' hover-class='none' url='/pages/need-add/main'>
           <text class='icon-btn text-olive'></text>
           <text class='text-grey'>我要资源</text>
-        </button>
+        </navigator>
       </div>
       <div class="cu-item">
         <navigator class='content' hover-class='none' url='../list/list' open-type="redirect">

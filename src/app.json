@@ -1,29 +1,39 @@
 {
   "pages": [
-    "pages/index/main",
+    "pages/need/main",
     "pages/my/main",
-    "pages/chat/main",
-    "pages/add/main"
+    "pages/resource-add/main",
+    "pages/need-add/main",
+    "pages/need-detail/main",
+    "pages/resource/main",
+    "pages/resource-detail/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "资源互换平台",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#FF4C62",
     "list": [
       {
-        "pagePath": "pages/index/main",
+        "iconPath": "images/icon_home_n@3x.png",
+        "selectedIconPath": "images/icon_home_h@3x.png",
+        "pagePath": "pages/need/main",
+        "text": "寻合作"
+      },
+      {
+        "iconPath": "images/icon_moment_n@3x.png",
+        "selectedIconPath": "images/icon_moment_h@3x.png",
+        "pagePath": "pages/resource/main",
         "text": "找资源"
       },
       {
+        "iconPath": "images/icon_mine_n@3x.png",
+        "selectedIconPath": "images/icon_mine_h@3x.png",
         "pagePath": "pages/my/main",
         "text": "我的"
-      },
-      {
-        "pagePath": "pages/add/main",
-        "text": "我有资源"
       }
     ]
   }
