@@ -8,6 +8,24 @@
         <open-data type="userNickName"></open-data>
       </div>
     </div>
+    <div class="cu-list grid col-2 solid-top}}">
+      <div class="cu-item">
+        <div class='icon-cardboardfill text-red'>
+          <div class="cu-tag badge">
+            <block>99+</block>
+          </div>
+        </div>
+        <text>我的消息</text>
+      </div>
+      <div class="cu-item">
+        <div class='icon-recordfill text-orange'>
+          <div class="cu-tag badge">
+            <block>99+</block>
+          </div>
+        </div>
+        <text>我发布的</text>
+      </div>
+    </div>
     <div class="cu-list menu margin-top">
       <div class="cu-item">
         <navigator class='content' hover-class='none' url='/pages/resource-add/main'>
