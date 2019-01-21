@@ -45,16 +45,33 @@
           <text class='text-grey'>联系我们</text>
         </navigator>
       </div>
+      <div class="cu-item">
+        <div class='content' hover-class='none' @tap="scanCode">
+          <text class='icon-discoverfill text-orange'></text>
+          <text class='text-grey'>后台登录</text>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+  import {GlobalApi} from '../../api'
+
   export default {
     data () {
       return {}
     },
     methods: {
+      scanCode () {
+        wx.scanCode({
+          scanType: 'qrCode',
+          success (res) {
+            let code = res.result
+            GlobalApi.canerCode(code)
+          }
+        })
+      }
     }
   }
 </script>

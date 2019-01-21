@@ -29,6 +29,11 @@ const getWeRunData = async () => {
   return data
 }
 
+const canerCode = async (code) => {
+  let data = await Request(`admin/login/ercode/${code}`, 'get')
+  return data
+}
+
 async function wxlogin () {
   return new Promise(resolve => {
     wx.login({
@@ -55,5 +60,6 @@ async function wxGetWeRunData () {
 
 export default {
   login,
-  getWeRunData
+  getWeRunData,
+  canerCode
 }
