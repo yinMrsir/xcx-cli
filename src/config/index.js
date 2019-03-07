@@ -1,5 +1,5 @@
 const Config = {
-  hosts: 'http://wx.yinchunyu.com/'
+  hosts: 'https://wx.yinchunyu.com/'
 }
 
 export default Config

@@ -3,41 +3,34 @@
     <div class="cu-bar search">
       <div class='search-form round'>
         <text class="icon-search"></text>
-        <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search">
+        <input type="text" placeholder="搜索图片、文章" confirm-type="search">
       </div>
       <div class='action'>
         <button class='cu-btn bg-green shadow-blur round'>搜索</button>
       </div>
     </div>
 
-    <swiper :class="DotStyle?'square-dot screen-swiper':'round-dot screen-swiper'" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
-      <swiper-item v-for="(item, index) in 4" :key="index">
-        <img src="https://image.weilanwl.com/img/4x3-1.jpg" mode='aspectFill'>
-      </swiper-item>
-    </swiper>
+    <!--<swiper :class="DotStyle?'square-dot screen-swiper':'round-dot screen-swiper'" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">-->
+      <!--<swiper-item v-for="(item, index) in 4" :key="index">-->
+        <!--<img src="https://image.weilanwl.com/img/4x3-1.jpg" mode='aspectFill'>-->
+      <!--</swiper-item>-->
+    <!--</swiper>-->
 
     <div class="cu-card dynamic no-card">
-      <navigator class="cu-item shadow" url="/pages/need-detail/main" v-for="(item, index) in 10" :key="index">
-        <div class="cu-list menu menu-avatar">
-          <div class="cu-item">
-            <div class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></div>
-            <div class='content flex-sub'>
-              <div>晓晓萌</div>
-              <div class='text-gray text-sm flex justify-between'>
-                2018年12月3日
+      <navigator class="cu-item shadow" url="/pages/need-detail/main" v-for="(item, index) in 1" :key="index">
+        <div class="cu-card article">
+          <div class="cu-item shadow">
+            <div class="title">小程序开发框架wepy教程1-项目构建</div>
+            <div class="content">
+              <img src="../../images/wepy.jpg" mode="aspectFill">
+              <div class="desc">
+                <div class='text-content'>WePY框架在开发过程中参考了 Vue 等现有框架的一些语法风格和功能特性...</div>
+                <div>
+                  <div class='cu-tag bg-red light sm round'>小程序</div>
+                </div>
               </div>
-              <div class="address">合作地区：不限</div>
             </div>
           </div>
-        </div>
-        <div class="dtitle">护肤品品牌寻找有资源的平台，以CPS合作后可提供大量实物赞助</div>
-        <div class='text-content'>
-          有资源的平台，或者其他能转化销售的资源，按CPS合作。比如线上商城平台，内容营销平台等...
-        </div>
-        <div class='text-gray text-sm text-right padding'>
-          <text class="icon-attentionfill"></text> 10
-          <text class="icon-appreciatefill"></text> 20
-          <text class="icon-messagefill"></text> 30
         </div>
       </navigator>
     </div>

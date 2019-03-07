@@ -2,36 +2,22 @@
   "pages": [
     "pages/need/main",
     "pages/my/main",
-    "pages/resource-add/main",
-    "pages/need-add/main",
-    "pages/need-detail/main",
-    "pages/resource/main",
-    "pages/resource-detail/main"
+    "pages/need-detail/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "资源互换平台",
+    "navigationBarTitleText": "免费web前端教程",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "selectedColor": "#FF4C62",
     "list": [
       {
-        "iconPath": "images/icon_home_n@3x.png",
-        "selectedIconPath": "images/icon_home_h@3x.png",
         "pagePath": "pages/need/main",
-        "text": "寻合作"
+        "text": "首页"
       },
       {
-        "iconPath": "images/icon_moment_n@3x.png",
-        "selectedIconPath": "images/icon_moment_h@3x.png",
-        "pagePath": "pages/resource/main",
-        "text": "找资源"
-      },
-      {
-        "iconPath": "images/icon_mine_n@3x.png",
-        "selectedIconPath": "images/icon_mine_h@3x.png",
         "pagePath": "pages/my/main",
         "text": "我的"
       }
