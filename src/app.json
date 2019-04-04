@@ -1,26 +1,12 @@
 {
   "pages": [
-    "pages/need/main",
-    "pages/my/main",
-    "pages/need-detail/main"
+    "pages/index/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "免费web前端教程",
+    "navigationBarTitleText": "宝宝免费取名",
     "navigationBarTextStyle": "black"
   },
-  "tabBar": {
-    "selectedColor": "#FF4C62",
-    "list": [
-      {
-        "pagePath": "pages/need/main",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/my/main",
-        "text": "我的"
-      }
-    ]
-  }
+  "navigateToMiniProgramAppIdList": ["wxeecc379dc2b223cb"]
 }
