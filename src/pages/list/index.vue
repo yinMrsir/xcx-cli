@@ -17,6 +17,7 @@
 </template>
 
 <script>
+  import Config from '../../config'
   export default {
     data () {
       return {
@@ -29,6 +30,7 @@
     },
     mounted () {
       let {wordsCount, sex, xing, time} = this.$root.$mp.query
+      this.names = []
       this.wordsCount = wordsCount
       this.sex = sex
       this.xing = xing
@@ -39,7 +41,7 @@
       getData () {
         var self = this
         wx.request({
-          url: `https://wx.yinchunyu.com/xcx/ymt/intitleJsonForWap`,
+          url: `${Config.hosts}xcx/ymt/intitleJsonForWap`,
           data: {
             wordsCount: self.wordsCount,
             sex: self.sex,

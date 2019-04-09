@@ -14,6 +14,9 @@
         <button @click="bindSubmitHander">立即打分</button>
       </div>
     </section>
+    <div class="padding flex flex-direction">
+      <button class='cu-btn bg-red margin-tb-sm lg' open-type="share">邀请好友打分测试</button>
+    </div>
   </div>
 </template>
 
@@ -24,6 +27,11 @@
         xing: '',
         ming: ''
       }
+    },
+    mounted () {
+      wx.setNavigationBarTitle({
+        title: '姓名打分'
+      })
     },
     methods: {
       bindChangeType (index) {
@@ -64,6 +72,12 @@
         } else {
           return true
         }
+      }
+    },
+    onShareAppMessage () {
+      return {
+        title: `@你，来测一测你的姓名打多少分吧~`,
+        path: `/pages/grade/main`
       }
     }
   }

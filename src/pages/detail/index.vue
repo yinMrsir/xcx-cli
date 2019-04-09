@@ -127,6 +127,7 @@
 </template>
 
 <script>
+  import Config from '../../config'
   export default {
     data () {
       return {
@@ -140,6 +141,9 @@
       let {xing, ming} = this.$root.$mp.query
       this.xing = xing || '王'
       this.ming = ming || '飞'
+      wx.setNavigationBarTitle({
+        title: `${xing}${ming}的姓名打分`
+      })
       this.getData()
     },
     methods: {
@@ -149,11 +153,11 @@
           title: '加载中'
         })
         wx.request({
-          url: `https://www.ruiwen.com/wechat_miniapp/json/mingzi.php?app=mzdf&firstname=${self.xing}&lastname=${self.ming}`,
+          url: `${Config.hosts}xcx/intitle/mingzi?xing=${self.xing}&ming=${self.ming}`,
           success (res) {
             wx.hideLoading()
-            self.datas = res.data
-            let {name, relate, zi} = res.data
+            self.datas = res.data.result
+            let {name, relate, zi} = res.data.result
             const ft = []
             const jbbh = []
             const ftbh = []

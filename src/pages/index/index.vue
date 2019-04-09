@@ -102,6 +102,12 @@
           return true
         }
       }
+    },
+    onShareAppMessage () {
+      return {
+        title: `@你，免费可以宝宝取名咯~快来试试吧~`,
+        path: `/pages/index/main`
+      }
     }
   }
 
