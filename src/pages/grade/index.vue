@@ -76,8 +76,9 @@
     },
     onShareAppMessage () {
       return {
-        title: `@你，来测一测你的姓名打多少分吧~`,
-        path: `/pages/grade/main`
+        title: `姓名测试打分，根据周易三才五格取名法为您评测姓名~`,
+        path: `/pages/grade/main`,
+        imageUrl: require('../../images/share2.jpg')
       }
     }
   }

@@ -105,8 +105,9 @@
     },
     onShareAppMessage () {
       return {
-        title: `@你，免费可以宝宝取名咯~快来试试吧~`,
-        path: `/pages/index/main`
+        title: `@你，2019沉稳大气男孩名，大气文雅女孩名免费取~`,
+        path: `/pages/index/main`,
+        imageUrl: require('../../images/share1.jpg')
       }
     }
   }

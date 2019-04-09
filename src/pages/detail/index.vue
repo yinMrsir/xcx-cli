@@ -2,7 +2,9 @@
   <div v-if="datas">
     <div class="detail-top padding bg-white">
       <div class="detail-top-left">
-        <h1><span v-for="(item, index) in datas.name" :key="index">{{item}}</span></h1>
+        <h1>
+          <span v-for="(item, index) in datas.name" :key="index">{{item}}</span>
+        </h1>
         <p>繁体：<span v-for="(item, index) in nameArr.ft" :key="index">{{item}}</span></p>
         <p>简笔笔画： <span v-for="(item, index) in nameArr.jbbh" :key="index"> {{item}}</span></p>
         <p>繁笔笔画： <span v-for="(item, index) in nameArr.ftbh" :key="index"> {{item}}</span></p>
@@ -38,7 +40,7 @@
           <div class="right">姓名学解析</div>
         </dt>
         <dd v-for="(item, index) in nameArr.xmx" :key="index">
-          <div class="left">{{item.name}}</div>
+          <div class="left">{{item.name}} <span>({{item.pinyin}})</span></div>
           <div class="center">{{item.daji_mean}}</div>
           <div class="right">({{item.daji}})</div>
         </dd>
@@ -169,7 +171,8 @@
               xmx.push({
                 name: v,
                 daji_mean: zi[v].daji_mean,
-                daji: zi[v].daji
+                daji: zi[v].daji,
+                pinyin: zi[v].pinyin
               })
             })
             self.nameArr = {
@@ -184,7 +187,7 @@
     },
     onShareAppMessage () {
       return {
-        title: `有人@你，我的名字吉祥度超越了全国${this.datas.sc[2]}%的用户,你也来测测吧~`,
+        title: `@你，厉害了~这个名字吉祥度居然超越了全国${this.datas.sc[2]}%的用户，太不可思议了~`,
         path: `/pages/grade/main`
       }
     }
@@ -237,7 +240,7 @@
           padding-bottom: 15rpx;
         }
         .left{
-          width: 80rpx;
+          width: 170rpx;
           text-align: center;
           border-right: #cccccc solid 1px;
         }
@@ -253,13 +256,17 @@
           padding-bottom: 15rpx;
         }
         .left{
-          width: 80rpx;
+          width: 170rpx;
           text-align: center;
           border-right: #cccccc solid 1px;
           border-bottom: #cccccc solid 1px;
           display: flex;
           align-items: center;
           justify-content: center;
+          span{
+            font-size: 22rpx;
+            color: #999;
+          }
         }
         .center{
           padding:15rpx;
