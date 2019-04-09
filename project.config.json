@@ -30,43 +30,21 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
 					"id": 0,
-					"name": "我的",
-					"pathName": "pages/my/main",
-					"query": ""
+					"name": "列表",
+					"pathName": "pages/grade/main",
+					"query": "",
+					"scene": null
 				},
 				{
 					"id": 1,
-					"name": "详情",
-					"pathName": "pages/need-detail/main",
-					"query": ""
-				},
-				{
-					"id": 2,
-					"name": "发布信息",
-					"pathName": "pages/need-add/main",
-					"query": ""
-				},
-				{
-					"id": 3,
-					"name": "我的需求",
-					"pathName": "pages/need/main",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "找资源",
-					"pathName": "pages/resource/main",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "详情",
-					"pathName": "pages/resource-detail/main",
-					"query": ""
+					"name": "测名",
+					"pathName": "pages/detail/main",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

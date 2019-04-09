@@ -1,12 +1,32 @@
 {
   "pages": [
-    "pages/index/main"
+    "pages/index/main",
+    "pages/list/main",
+    "pages/detail/main",
+    "pages/grade/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "宝宝免费取名",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f95c76",
+    "list": [
+      {
+        "iconPath": "images/gongju.png",
+        "selectedIconPath": "images/gongju_active.png",
+        "pagePath": "pages/index/main",
+        "text": "免费取名"
+      },
+      {
+        "iconPath": "images/ceshi.png",
+        "selectedIconPath": "images/ceshi_active.png",
+        "pagePath": "pages/grade/main",
+        "text": "姓名打分"
+      }
+    ]
   },
   "navigateToMiniProgramAppIdList": ["wxeecc379dc2b223cb"]
 }

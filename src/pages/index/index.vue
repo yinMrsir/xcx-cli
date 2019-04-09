@@ -35,15 +35,18 @@
         </div>
       </div>
     </section>
-    <navigator
-      target="miniProgram"
-      open-type="navigate"
-      app-id="wxeecc379dc2b223cb"
-      path="/pages/index/main"
-      extra-data=""
-      version="release" class="cu-btn padding">
-      更多孕妈相关工具
-    </navigator>
+    <div class="padding flex flex-direction">
+      <navigator
+        target="miniProgram"
+        open-type="navigate"
+        app-id="wxeecc379dc2b223cb"
+        path="/pages/index/main"
+        extra-data=""
+        version="release" class="class='cu-btn bg-red margin-tb-sm lg' ">
+        更多孕妈相关工具
+      </navigator>
+    </div>
+
   </div>
 </template>
 
@@ -79,18 +82,9 @@
       bindSubmitHander () {
         var self = this
         if (this.chk()) {
-          wx.request({
-            url: `https://wx.yinchunyu.com/xcx/ymt/intitleJsonForWap`,
-            data: {
-              wordsCount: self.currIndex + 1,
-              sex: self.currSexIndex,
-              xing: self.jfirstName
-            },
-            success (res) {
-              let data = res.data.result
-              self.nameList = data.names
-              self.isHiddenResult = false
-            }
+          let time = self.$refs.pickerYearDay.pickerTime
+          wx.navigateTo({
+            url: `/pages/list/main?wordsCount=${self.currIndex + 1}&sex=${self.currSexIndex}&xing=${self.jfirstName}&time=${time}`
           })
         }
       },
